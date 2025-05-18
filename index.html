@@ -3,87 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poder da Manipulação</title>
+  <title>Manipulação</title>
   <style>
     body {
-      background-color: #1e1e1e;
+      margin: 0;
+      background-color: #111;
       font-family: Arial, sans-serif;
       color: white;
-      margin: 0;
-      padding: 0;
       text-align: center;
     }
-    header {
-      background-image: url('https://link-da-sua-imagem.com/imagem.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 180px;
-      position: relative;
+
+    .header {
+      padding: 40px 20px 20px;
     }
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid white;
-      position: absolute;
-      bottom: -60px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-image: url('perfil.png');
-      background-size: cover;
-      background-position: center;
-    }
-    .content {
-      padding-top: 80px;
-      max-width: 600px;
-      margin: auto;
-    }
-    .book {
-      background-color: black;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-      text-align: center;
-      padding: 20px;
-    }
-    .book a {
-      color: white;
-      text-decoration: none;
+
+    .header h1 {
+      font-size: 32px;
       font-weight: bold;
-      display: inline-block;
-      width: 100%;
-      transition: 0.3s;
+      margin: 0;
     }
-    .book a span {
-      color: red;
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #000;
+      background-image: url('perfil.jpg'); /* Substitua pela URL da sua imagem */
+      background-size: cover;
+      background-position: center;
+      margin: 20px auto;
     }
-    .book:hover {
+
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    .button {
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 15px;
+      margin: 10px auto;
+      width: 80%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: block;
+      max-width: 400px;
+    }
+
+    .button:hover {
       background-color: #333;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <div class="header">
+    <h1>MANIPULAÇÃO</h1>
     <div class="profile-pic"></div>
-  </header>
-
-  <div class="content">
-    <h2>Poder da Manipulação</h2>
-    <p>Descubra seu potencial e aprenda a dominar a arte da persuasão.</p>
-
-    <div class="book">
-      <a href="https://seulink.com/quiz-manipulavel" target="_blank">
-        Responda as perguntas e descubra se você é manipulável 🧠 <span>CLIQUE AQUI</span>
-      </a>
-    </div>
-
-    <div class="book">
-      <a href="https://pay.kiwify.com.br/cVAlZZD" target="_blank">
-        Curso de manipulação, <span>CLIQUE AQUI</span>
-      </a>
-    </div>
-
+    <p class="subtitle">Compre agora e deixe de ser medíocre</p>
   </div>
+
+  <a href="https://seulink.com/quiz-manipulavel" class="button" target="_blank">
+    Responda as perguntas e descubra se você é manipulável 🧠
+  </a>
+
+  <a href="https://pay.kiwify.com.br/cVAlZZD" class="button" target="_blank">
+    Curso de manipulação
+  </a>
+
 </body>
 </html>
