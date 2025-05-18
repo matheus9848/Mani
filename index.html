@@ -77,13 +77,6 @@
       border: none;
       border-radius: 10px;
     }
-
-    .timer {
-      margin-top: 20px;
-      font-size: 20px;
-      color: #ff4444;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
@@ -104,33 +97,10 @@
     <span class="acesse-aqui">ACESSE AQUI</span>
   </a>
 
-  <!-- Cronômetro regressivo -->
-  <div class="timer" id="timer">Tempo restante: 60:00</div>
-
   <!-- Vídeo incorporado -->
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/qvSny9BN3es" allowfullscreen></iframe>
   </div>
-
-  <script>
-    let timeLeft = 60 * 60; // 1 hora em segundos
-    const timerElement = document.getElementById('timer');
-
-    function updateTimer() {
-      const minutes = Math.floor(timeLeft / 60);
-      const seconds = timeLeft % 60;
-      timerElement.textContent = `Tempo restante: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-      timeLeft--;
-
-      if (timeLeft >= 0) {
-        setTimeout(updateTimer, 1000);
-      } else {
-        timerElement.textContent = "TEMPO ESGOTADO!";
-      }
-    }
-
-    updateTimer();
-  </script>
 
 </body>
 </html>
